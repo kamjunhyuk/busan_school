@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+        // 자바스크립트의 자료형(type)
+      // 숫자형 number : 일반적인 숫자를 의미, 정수, 실수, 음수, 양수
+      // 문자열형 string : 일반적인 문자를 의미, 큰따옴표, 작은따옴표로 감싼 모든 것
+      // 논리형 boolean : 참(True), 거짓(False)을 나타내는 자료형
+      // null, undefined : 데이터가 존재하지 않는다는 의미의 자료형
+      // 배열 array : 하나의 변수명을 가지고 있으나, 여러개의 데이터를
+      //              저장할 수 있는 자료형
+      //              데이터를 저장하는 위치를 index(0,1,2,3...)를 통해서 저장
+      // 객체 object : 하나의 변수명으로 여러개의 데이터를 저장할 수 있는 자료형
+      //               자료형, 함수(기능)까지 가지고 있음
+      //               key와 value가 1:1로 매칭되어 저장하는 방식
+
+      var num1 = 100;
+      console.log(num1);
+      console.log(num1 + 100);
+      console.log(num1 + 0.5);
+      
+      var num1 = -500;
+      console.log(num1);
+      console.log(num1 + 300);
+
+      var num1 = 50.5;
+      console.log(num1);
+      console.log(num1 - 10.1);
+
+      var str1 = "문자열";
+      console.log(str1);
+      var str1 = "다른문자열";
+      console.log(str1);
+      var str1 = 100000; //숫자형
+      console.log(str1);
+      var str2 = "100000"; //문자열형
+      console.log(str2);
+
+      console.log(str1 + 50000) //숫자끼리 연산
+      console.log(str2 + 50000) //다같이 문자열로 표시하여 연결
+
+      var str3 = "true"; //보기에는 boolean형이지만 문자열형
+      var str4 = "문자열 타입이기 떄문에 공백도 문자열!@#"
+      console.log(str4);
+
+      var bool1 = true;
+      var bool2 = false; //참가 거짓을 구분하는데 사용
+
+      // null, undefined : 데이터가 존재하지 않는 형태를 의미
+        // null : 한번 이상 사용한 후 데이터가 없는 상태
+        // undefined : 선언한 후 한번도 사용하지 않은 상태
+          // 다른 언어에는 없는 JS 고유 자료형
+      
+      var varNull = null;
+      var varUndefined;
+
+      console.log(varNull);
+      console.log(varUndefined);
+
+      var value1 = "복숭아";
+      var value2 = "사과";
+      var value3 = "딸기";
+      var value4 = "배";
+      var value5 = "참외";
+
+      console.log(value1);
+      console.log(value2);
+      console.log(value3);
+      console.log(value4);
+      console.log(value5);
+
+      var value1 = "자두";
+      console.log(value1);
+
+      var fruit = ["복숭아", "사과", "딸기", "배", "참외"];
+      console.log(fruit);
+      console.log(fruit[0]);
+
+      var car = {name : "콜로라도", cc : "3600", color : "검정", price : "3800만원"};
+      console.log(car)
+
+      var num;
+      var obj = null;
+      document.write(typeof 100 + "<br>");
+      document.write(typeof 10.5 + "<br>");
+      document.write(typeof "홍길동" + "<br>");
+      document.write(typeof true + "<br>");
+      document.write(typeof [1,2,3] + "<br>");
+      document.write(typeof {name : "홍길동", age : 25} + "<br>");
+      document.write(typeof num + "<br>");
+      document.write(typeof obj + "<br>");
+      
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

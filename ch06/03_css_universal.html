@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Document</title>
+    <style>
+      *{
+          color: red;
+          background-color: yellow;
+          font-size: 16px;
+      }
+      /* 전역설정 , 그러나 우선순위가 가장 낮음 */
+      
+      h1 {background-color: yellowgreen;}
+      h2 {background-color: green;}
+      h3 {background-color: pink;}
+      p {color: royalblue}
+
+      .class1 {
+        color: blue;
+        background-color: springgreen;
+      }
+      .class2 {
+        color: tomato;
+        background-color: burlywood;
+      }
+      .class3 {
+        color: blue;
+        background-color: springgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="class1">Universal  Selector</h1>
+    <h2 class="class2">모두 같은 색상, 같은 크키</h2>
+    <h3>전체적으로 동시에 스타일 적용</h3>
+    <p>모든 데이터에 적용</p>
+    <a href="#">링크</a>
+  </body>
+</html>

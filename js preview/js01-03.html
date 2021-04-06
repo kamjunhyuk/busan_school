@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    window.onload = function() {
+      var btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click", function() {
+      alert("버튼1 클릭했습니다.");
+    });
+    }
+    var btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click", function() {
+      alert("버튼1 클릭했습니다.");
+    });
+  </script>
+  <script src=
+  "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+
+</head>
+<body>
+  <button id="btn1">클릭!</button>
+  <button id="btn2">클릭!</button>
+
+  <script>
+    var btn2 = document.getElementById("btn2");
+    btn1.addEventListener("click", function() {
+      alert("버튼2 클릭했습니다.");
+    });
+  </script>
+</body>
+</html>
+
+<!-- 
+1. onload 이벤트
+  기본 자바스크립트 이벤트로 동작
+  모든 컨텐츠가 로드된 후 동작하는 이벤트 (대용량 동영상등, 속도느림)
+  구형 웹브라우저에서 사용가능 (IE8이하)
+2. DOMContentLoaded 이벤트
+  기본 자바스크립트 이벤트로 동작
+  모든  HTML 태그가 로드된 후 동작하는 이벤트 (속도빠름)
+  구형 웹브라우저에서 사용불가 (IE8 이하)
+3. jQuery 의 Ready 이벤트
+  기본적으로 DOMContentLoaded와 동일한 방식으로 동작
+  jQuery의 Ready 이벤트를 사용하려면
+  jQuery 라이브러리를 반드시 먼저 로드해야 함
+-->

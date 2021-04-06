@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+    // 자바스크립트 출력 방법 
+    // html 요소에 쓰기 : innerHTML 사용
+    // document에 쓰기 : document .write() 사용
+    // 알림 상자에 쓰기 : window.alert(), alert() 사용
+    // 웹브라우저 콘솔에 쓰기 : console.log 사용
+
+    window.addEventListener("DomContentLoaded",function() {
+      var ptag1 = document.getElementById("demoInnerHTML");
+      ptag1.innerHTML = 10 + 10;
+    
+      document.write("document.write를 사용하여 화면 출력");
+    });
+
+  </script>
+
+</head>
+<body>
+  <h3>화면에 출력하기</h3>
+  <hr>
+  <p id="demoInnerHTML"></p>
+
+</body>
+</html>
