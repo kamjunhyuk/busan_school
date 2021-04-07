@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Document</title>
+    <script>
+      //제어문
+      //조건에 따라서 실행되는 코드가 변경되는 형태 
+
+      //if문
+      //가장 기본적인 제어문으로 조건식이 참일 경우 추가로 코드블록의 내용을 실행 
+
+      var date = new Date().getHours();
+
+      if (date < 16) {
+        console.log("아직 수업시간입니다.");
+      } 
+    
+      console.log("현재 시간은 " + new Date() + "입니다.")
+
+      //if ~ else 문
+      //조건식이 참인지 거짓인지에 따라 반드시 둘중 하나를 실행하는 형태
+      //사용방법
+      // if(조건식) {
+      //   조건이 참일 경우 실행될 코드;
+      // }
+      // else {
+      //   조건이 거짓일 경우 실행될 코드;
+      // }
+
+      var food = "자장면";
+
+      if (food == "자장면") {
+        console.log("자장면을 먹습니다.");
+      }
+      else {
+        console.log("짬뽕을 먹습니다.");
+      }
+
+      // else ~ if 문
+      // 조건식을 여러개 사용하는 형태의 if문
+      // 조건식은 무조건 1번부터 확인하며, 우의 조건식이 거짓일 경우
+      // 바로 아래의 조건식을 확인
+      // 조건식을 설정시 차례대로 확인할 수 있는 형태로 만들어야 함
+      // 가장 마지막의 else문은 필요가 없을 경우 삭제가 가능함
+
+
+      // 사용방법
+      // if(조건식1) {
+      // 조건식 1이 참일 경우 실행할 코드
+      // }
+      // else if (조건식2) {
+      // 조건식 2가 참일 경우 실행할 코드
+      // }
+      // else if (조건식3) {
+      // 조건식 3이 참일 경우 실행할 코드 
+      // }
+      // else {
+      // 위의 모든 조건식이 다 거짓일 경우 실행할 코드
+      // }
+
+
+
+      console.log("\n-----else if 사용-----\n");
+      var score = 85;
+
+      if (score > 90) {
+        console.log("당신의 점수는 " + score + "점 이고 A학점 입니다.")
+      }
+      else if (score > 80) {
+        console.log("당신의 점수는 " + score + "점 이고 B학점 입니다.")
+      }
+      else if (score > 70) {
+        console.log("당신의 점수는 " + score + "점 이고 C학점 입니다.")
+      }
+      else if (score > 60) {
+        console.log("당신의 점수는 " + score + "점 이고 D학점 입니다.")
+      }
+      else {
+        console.log("당신의 점수는 " + score + "점 이고 F학점 입니다.")
+      }
+
+      console.log("\n-----if문 중복 사용-----\n");
+      var score = 85;
+
+      if (score > 90) {
+        console.log("당신의 점수는 " + score + "점 이고 A학점 입니다.")
+      }
+      if (score > 80) {
+        console.log("당신의 점수는 " + score + "점 이고 B학점 입니다.")
+      }
+      if (score > 70) {
+        console.log("당신의 점수는 " + score + "점 이고 C학점 입니다.")
+      }
+      if (score > 60) {
+        console.log("당신의 점수는 " + score + "점 이고 D학점 입니다.")
+      }
+      else {
+        console.log("당신의 점수는 " + score + "점 이고 F학점 입니다.")
+      }
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
