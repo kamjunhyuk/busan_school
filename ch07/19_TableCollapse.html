@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title></title>
+    <style>
+      td, th  {
+        border: 2px solid black;
+      }
+      #tb1 {
+        border: 3px solid red;
+        background-color: yellow;
+        border-collapse: separate;
+        border-spacing: 10px 20px;
+        table-layout: auto;
+      }
+      #tb2 {
+        border: 3px solid red;
+        background-color: yellow;
+        border-collapse: collapse;
+        table-layout: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <table id="tb1" width="350px">
+      <tr>
+        <th>table border-collapse</th>
+        <td>separate 적용</td>
+      </tr>
+    </table>
+    <p></p>
+    <table id="tb2" width="350px">
+      <tr>
+        <th>table border-collapse</th>
+        <td>collapse 적용</td>
+      </tr>
+  </body>
+</html>
