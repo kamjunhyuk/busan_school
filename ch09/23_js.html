@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var text;
+      var week = new Date() .getDay();
+      switch(week) {
+        case 1:    
+        case 2:
+          text = "HTML5"
+          break;
+        case 3:
+        case 4:
+          text = "자바스크립트"
+          break;
+        case 5:
+        case 6:
+          text = "영어";
+          break;
+        case 0:
+        default:
+          text = "수영";
+      }
+
+      
+      console.log("오늘은 " + text + " 학습하는 날입니다.")
+
+      // 월화는 HTML5 수목은 JS 금토는 영어 일은 수영으로 하는 조건
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>

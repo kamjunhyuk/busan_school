@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var day; //오늘 요일 정보를 저장할 변수
+      var week = new Date().getDay();
+      // Date() 현재 날짜시간 정보를 불러오는 자바스크립트 기본객체
+      // getDay() 날짜시간 정보에서 요일을 가져오는 함수 (0~6까지 숫자로 가져옴)
+
+      console.log(new Date())
+      console.log(week);
+      
+      switch(week) {
+        case  0:
+          day = "일요일";
+          break;
+        case  1:
+          day = "월요일";
+          break;
+        case  2:
+          day = "화요일";
+          break;
+        case  3:
+          day = "수요일";
+          break;
+        case  4:
+          day = "목요일";
+          break;
+        case  5:
+          day = "금요일";
+          break;
+        case  6:
+          day = "토요일";
+          break;
+        default:
+          day = "없는 요일";
+      }
+
+      console.log("오늘은 " + day + " 입니다.");
+
+
+
+      // else-if 문으로 변환
+
+
+      day = ""; // "" 빈 문자열
+      week = new Date() .getDay();
+
+      
+      if (week == 1) {
+        day = "월요일";
+      }
+      else if (week == 2) {
+        day = "화요일";
+      }  
+      else if (week == 3) {
+        day = "수요일";
+      }
+      else if (week == 4) {
+        day = "목요일";
+      }
+      else if (week == 5) {
+        day = "금요일";
+      } 
+      else if (week == 6) {
+        day = "토요일";
+      }
+      else if (week == 0) {
+        day = "일요일";
+      }
+
+      console.log("오늘은 " + day + " 입니다.");
+
+
+
+
+
+    </script>
+  </body>
+</html>
